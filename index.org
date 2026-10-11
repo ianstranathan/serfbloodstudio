@@ -16,6 +16,24 @@ teamwork with your friends.
 
 BuffStuff StuffBuffs.
 
+* Subscribe
+News, devlogs, and updates ( mostly just big stuff and deals; the occasional devlog youtube video update)
+Never any spam, unsubscribe with a single click.
+# :PROPERTIES:
+# :CUSTOM_ID: newsletter
+# :END:
+
+#+BEGIN_EXPORT html
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2690035');
+</script>
+<div class="ml-embedded" data-form="rXSkdi"></div>
+#+END_EXPORT
+
 * DEVLOG
 :PROPERTIES:
 :CUSTOM_ID: devlog
@@ -65,7 +83,6 @@ BuffStuff StuffBuffs.
    posts
    "\n"))
 #+END_SRC
-
 
 
 
