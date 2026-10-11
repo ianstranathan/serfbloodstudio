@@ -1,0 +1,79 @@
+
+* GAMES
+:PROPERTIES:
+:CUSTOM_ID: games
+:END:
+
+** Volcano-Go-Go
+Bet with a mercurial Genie and platform out of a volcano while balancing betrayal and
+teamwork with your friends.
+
+
+* About
+:PROPERTIES:
+:CUSTOM_ID: about
+:END:
+
+BuffStuff StuffBuffs.
+
+* DEVLOG
+:PROPERTIES:
+:CUSTOM_ID: devlog
+:END:
+
+#+BEGIN_SRC emacs-lisp :results value raw :exports results :eval export
+(let* ((root (file-name-directory (buffer-file-name)))
+       (devlog-dir (expand-file-name "devlog/" root))
+       (files (directory-files devlog-dir t "\\.org$"))
+       (posts
+        (mapcar
+         (lambda (file)
+           (with-temp-buffer
+             (insert-file-contents file)
+             (let ((title (or (save-excursion
+                                (goto-char (point-min))
+                                (and (re-search-forward "^#\\+TITLE:\\s-+\\(.*\\)" nil t)
+                                     (match-string 1)))
+                              (file-name-base file)))
+                   (date (save-excursion
+                           (goto-char (point-min))
+                           (and (re-search-forward "^#\\+DATE:\\s-+\\(.*\\)" nil t)
+                                (match-string 1)))))
+               (list :file file
+                     :title title
+                     :date (or date "")))))
+         files)))
+
+  ;; Sort posts by date descending (lexicographically, e.g. YYYY-MM-DD)
+  (setq posts
+        (sort posts
+              (lambda (a b)
+                (string> (plist-get a :date)
+                         (plist-get b :date)))))
+
+  ;; Format as Org links pointing to the generated HTML files
+  (mapconcat
+   (lambda (post)
+     (let* ((file (plist-get post :file))
+            (basename (file-name-sans-extension (file-name-nondirectory file)))
+            (title (plist-get post :title))
+            (date (plist-get post :date)))
+       (format "- [[file:devlog/%s.html][%s]]%s"
+               basename
+               title
+               (if (string-empty-p date) "" (concat " — " date)))))
+   posts
+   "\n"))
+#+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
