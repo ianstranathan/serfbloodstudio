@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-10-20 Tue 15:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Let the coding warm you &amp; The Myth of Slopyphus</title>
+<meta name="author" content="Ian" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="../style.css">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<header class="site-banner"><a href="/index.html">Serf Blood Studio</a></header>
+</div>
+<div id="content" class="content">
+<h1 class="title">Let the coding warm you &amp; The Myth of Slopyphus</h1>
+<p class="post-meta">Ian · 2026-10-01</p>
+
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org180051a">Philosophical prelude</a></li>
+<li><a href="#orgc73420b">TL;DR</a></li>
+<li><a href="#org1c233b7">On AI</a></li>
+<li><a href="#orgc4e01d2">Regarding Agentic workflows or the insistence that we're at a higher abstraction layer</a></li>
+<li><a href="#orgaddf1aa">Do not diminish the value of your own humanity</a></li>
+<li><a href="#orgd9672ac">Rammification of LLMs on indie game dev efforts</a></li>
+<li><a href="#orgfb0fa31">So, should you be trying to make video games in this new world?</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org180051a" class="outline-2">
+<h2 id="org180051a">Philosophical prelude</h2>
+<div class="outline-text-2" id="text-org180051a">
+<p>
+The title's allusions are from Solzhenitsyn's "One Day in the Life of Ivan Denisovich"
+and Camus' "The Myth of Sisyphus" respectively (and kinda uncreatively).
+</p>
+
+<p>
+It's flippant to make such an allusion given the amount of human suffering involved,
+but I was reminded of Ivan Denisovich while thinking about this stuff; specifically the
+immense pride the character takes in laying the bricks straight and mixing the mortar properly despite
+the fundamental futility of the labor as he's doing it in a gulag.
+(Craftsmanship is a flame of human agency that shields against spiritual despair.)
+</p>
+
+<p>
+There is a universality here (as all things must have). Anything we do (game dev included) is a reminder
+of the inherent conflict between a deep desire for intrinsic meaning and an indifferent universe.
+The absurdity of that, that there is no ultimately correct or prescribed path, forces us to either live authetically or in bad faith.
+Living truly by your own self-created values or conforming to societal expectations or the dogmas you inherited.
+</p>
+
+<blockquote>
+<p>
+A man traveling across a field encountered a tiger.
+He fled, the tiger after him.
+Coming to a precipice, he caught hold of the root of a wild vine and swung himself down over the edge.
+The tiger sniffed at him from above.
+Trembling, the man looked down to where, far below, another tiger was waiting to eat him.
+Only the vine sustained him.
+Two mice, one white and one black, little by little started to gnaw away at the vine.
+The man saw a luscious strawberry near him.
+Grasping the vine with one hand, he plucked the strawberry with the other.
+How sweet it tasted!
+</p>
+
+<ul class="org-ul">
+<li>Zen Flesh, Zen Bones</li>
+</ul>
+</blockquote>
+
+<p>
+This is also the essence of the Myth of Sisyphus from Camus.
+The author inverts the parable and comes to the conclusion that Sisyphus must have been happy
+By embracing the endless task without despair, he defiantly engages with the present moment, independent of any final outcome.
+</p>
+
+<p>
+Why make anything when the conditions of making it seem to invalidate the act? <a href="https://www.youtube.com/watch?v=dGPYSq0ETAU">You do it for the homies</a>
+</p>
+
+
+<div id="org7407b24" class="figure">
+<p><img src="./../assets/for_the_homies.png" alt="for_the_homies.png" />
+</p>
+</div>
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orgc73420b" class="outline-2">
+<h2 id="orgc73420b">TL;DR</h2>
+<div class="outline-text-2" id="text-orgc73420b">
+<p>
+<b>On AI in general</b>:
+</p>
+
+<p>
+Be more curious, not less; write more code not less.
+Double down on your own personal skills and knowledge.
+AI is a tool, we absolutely should use it, but it's a delegation layer not an abstraction layer. (see below "On AI")
+</p>
+
+<p>
+<b>On AI as it relates to Game Dev</b>:
+</p>
+
+<p>
+The issues in indie game development evinced by AI are not new, but they've been accelerated. (As
+any force multiplying tool naturally would)
+(Indiepolcalypse was a term from like 2015:
+"existential anxiety and economic shift in independent game development,
+where a massive surge of new releases led to an oversaturated marketplace,
+a steep drop in average sales, and severe discoverability issues on platforms like Steam")
+</p>
+
+<p>
+Too many games were being made before AI. Clones have always existed. Decompilation has always existed. Review and discoverability manipulation have
+always existed. Tooling increased =&gt; ease of access increased =&gt; thus volume and scale increased.
+I don't think that matters in the long run:
+<a href="https://www.youtube.com/watch?v=3Vm6WqoaNZ4">My indie game got cloned before I released it</a>
+<a href="https://www.youtube.com/watch?v=P315dN9GgOs">Are game developers doomed</a>
+</p>
+
+<p>
+In your own self-interest, use it as an accelerant and a learning resource, not as a genie-in-a-lamp.
+<a href="https://www.youtube.com/watch?v=xPjZzMVyrAQ">Addicted to Vibe Coding</a>
+</p>
+
+<p>
+I feel very strongly we're approaching an irreducibility or automation limit on creation,
+</p>
+
+<blockquote>
+<p>
+"Datasets by their very nature are backward-looking. Creativity is forward-looking."
+</p>
+<ul class="org-ul">
+<li>Strauss Zelnick (Take Two Ceo)</li>
+</ul>
+</blockquote>
+
+<p>
+<b>other opinions on the subject</b>
+If you're interested in hearing other, more cogent opinions I can personally recommend:
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=uWnUnMphmPM">After the AI Hype – What’s Real, and What’s Next?</a> 
+<a href="https://www.youtube.com/watch?v=JCCwSlydf_M">Will AI replace programmers? </a>
+<a href="https://www.youtube.com/watch?v=FZ3b99yHZKQ">One prompt is all it took, bro! (coherence and error propagation)</a>
+<a href="https://www.youtube.com/watch?v=HTaZRMzH1Wc">Lost relic Game's take on why this asking the wrong question</a>
+</p>
+
+<p>
+Anything by "Internet of Bugs" on YT:
+<a href="https://www.youtube.com/watch?v=iq0b5iUmQzU">Why is there no consumer demand for AI?</a>
+<a href="https://www.youtube.com/watch?v=OIW392R0j_Y">Don’t Believe the Hype: AI is Not a Magic Solution for Software</a>
+</p>
+
+
+<p>
+<a href="https://www.youtube.com/watch?v=r03DPWGIxfY">Cory Doctorow: There Are Reasons to Be Optimistic About the A.I. Bubble Bursting</a>
+(haven't watched this, but trust that it gives the essence of the book of his I read recently:
+"The Reverse Centaur's Guide to Life after AI)
+(Commentary on the real reasons certain narratives are pushed (and the accompanying model releases)
+essentially signaling to investor class)
+</p>
+
+<p>
+<a href="https://www.youtube.com/@larsfayedev/videos">Lars Faye</a>; anything by this guy is very reasonable take
+</p>
+
+<p>
+<a href="https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e">Rich Hickey, AI is not a tool</a>
+(ai is not a tool as it's being used agentically, that doesn't mean it can't or ultimately won't be as
+discussed here: <a href="https://www.youtube.com/watch?v=eDNuf4Zhk5I">Priestly coders are more annoying than vibe coders</a> )
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=x0nbR4FNmuk">The cure to AI Pyschosis</a>
+(it's educating yourself, the more you know the better you can use these tools which aren't going anywhere)
+</p>
+
+<p>
+<a href="https://geohot.github.io/blog/jekyll/update/2026/07/12/i-love-llms.html">I love LLMs, I hate the hype</a>
+</p>
+
+<p>
+For a more economic or political perspective, I can strongly recommend:
+<a href="https://www.youtube.com/@nobull-markettalkwithgeorg4907/videos">Market Talk with George Noble</a>
+<a href="https://www.youtube.com/@elithecomputerguy">Eli the computer guy</a>
+<a href="https://www.youtube.com/@TheTechReportTR">The Tech Report</a>
+<a href="https://www.youtube.com/@PivotToAI">Pivot to AI</a>
+<b>Or anything with Ed Zitron, Gary Marcus</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1c233b7" class="outline-2">
+<h2 id="org1c233b7">On AI</h2>
+<div class="outline-text-2" id="text-org1c233b7">
+<p>
+AI is in essence an extremely high dimensional (depending on the definition of dimension, trillions of dimensions in the most recent frontier models as of writing this)
+prediction (searching) tool.
+<a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">Wolfram: What Is ChatGPT Doing … and Why Does It Work?</a>
+</p>
+
+<p>
+<b>So why all this craziness?</b>
+The historic, unprecedented, paroxysmal hype cycle is multi-faceted ( <a href="https://en.wikipedia.org/wiki/Gartner_hype_cycle">Gartner Hype Cycle</a> )
+but I think it boils down to:
+</p>
+
+<ol class="org-ol">
+<li><p>
+Initial spark from simple existing incentive structures.
+Ccompanies can be valued on potential, future earnings rather
+than current profits (See Tesla vs Toyota as a typical example:
+average number of global sales of the last 15 years as a ratio Teslsa to Toyota: ~0.061, while
+doing the same thing with average stock price growth: ~48.9
+Tesla's stock-price growth multiple was approximately 49 times Toyota's over the same period)
+</p>
+
+<p>
+A company that makes more money, sells more product and employs more people
+is seen as less valuable because the amount of potential return is less variable / more static
+(mature vs growth company)
+Speculation could 1000x on amazon in the early 2000s or Tesla in the 2010s,
+but not Walmart or Toyota respectively
+</p></li>
+
+<li>Game theoretically (a'la a prisoner dilemma) they're locked into an arms race to protect
+absurdly large capex (trillions of dollars) in a percieved winner take all scenario
+(The big hyperscalers like Amazon, Meta, Google, Microsoft)</li>
+
+<li>We're at an inflection point in civil society due to 50+ years of predatory neoliberalism.
+There's large amounts of corruption and big tech just happened to be the largest player going into this
+current time period.</li>
+</ol>
+
+<p>
+The only way to get a return on the mountains of money invested is to disrupt all labor.
+</p>
+
+<p>
+Before the music stops, funding must continue. To continue, the investor class faith in this total
+disruptuion must be renewed.
+To do this apocalyptic fairy tales about exinction are promulgated by corporate media (ouroborosionally
+connected to the very thing they're "reporting" on) or
+industries like software, visual art or academic categories are protrayed as solved.
+Investment is then justified by anticipated (hype) demand, while the resulting supply and
+subsidized usage are treated as evidence of that demand.
+</p>
+
+<p>
+(Despite the economics not making sense to me: $2.67 trillion in total AI spending in 2026 (Gartner) vs the
+total software market being around 1.4 trillion; it's also worth common sense noting that AI build out is not static, it's a recurring cost
+hardware replacement, new capacity, model training, inference, networking, and power costs)
+</p>
+
+<p>
+It's important to have this context as the ancillary narratives (e.g. game dev being cooked ) are
+simply there to impress the investor class not actually disrupt us.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc4e01d2" class="outline-2">
+<h2 id="orgc4e01d2">Regarding Agentic workflows or the insistence that we're at a higher abstraction layer</h2>
+<div class="outline-text-2" id="text-orgc4e01d2">
+<p>
+It's important not to make a categorical error about AI (which seems to be the dominant mistake amongst techy AI boosters).
+It's not an abstraction layer.
+An abstraction layer (i.e. machine code to assembly or assembly to high level language) is a
+deterministic translation.
+Sampling tokens based on hyperspace probability distributions is a stochastic process (not deterministic).
+</p>
+
+<p>
+Agents are thus, at a fundamental level, chains of discrete probabilistic decisions.
+Imagine a task broken down into 20 discrete steps,
+Even if an individual agentic step has an extraordinarily high success rate of 95%
+the probability that the entire 20-step workflow executes without a single error is calculated
+as \(0.95^{20}\).
+That overall success rate plummets to ~36%.
+So, more than 6 out of 10 runs will fail purely
+due to the compounding math of sequential probabilities.
+</p>
+
+<p>
+Unlike a deterministic abstraction layer where a bad instruction halts execution immediately
+(e.g., a syntax error that stops a compiler), a probabilistic agent handles errors improvisationally which
+exponentially compounds and causes "semantic drift"
+This can lead to exponential spiraling if it hits a hard barrier (testing barrier) and break
+invariant code elsewhere in codebase to self-correct, causing development thrashing and a proper mess.
+</p>
+
+<p>
+I think we're touching an irreducible fault line here.
+Code generation (or anything generation) is stochastic and is fundamentally unreliable,
+thus guardrails (harnesses) are made that deterministically stear the generation,
+but if those gaurdrails themselves are generated by the same stochastic processes they are meant to
+police, they share the exact same blind spots, latent biases, and hallucination vectors
+as the code they are checking (thus there has to be a prime mover / axiom i.e. a human that at least
+kind of understands what the hell's going on, something that is able to jump out of a formal system)
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=daWdQtSxgKo">More Mark Jivko on the topic</a>
+This kind of touches some deep philosophical ground (Godel's incompletes theorem &amp; Baudrillardian hyperreality)
+</p>
+
+<p>
+A more valid approach I've seen brough up recently from AI boosters is an anology to evolution, that evolution is a random (stochastic)
+process and that if it works it works (just let the generative process explore a design or utility space until it does
+what I want it to do)
+I can kind of buy into this at first, but it also seems a lot weaker when you consider the driver
+of evolution in the real world (biological or otherwise) is the immutable laws of physics.
+I don't think there is a corresponding evolutionary pressure in software.
+A piece of software can be completely broken, logically incoherent,
+and full of security backdoors, yet still compile, pass a poorly written test suite, and run happily for months until a specific sequence of user inputs triggers a catastrophe
+</p>
+
+<p>
+Without explanatory understanding, the system accumulates accidental complexity at an exponential rate and
+is fragile to future incongruous interaction (something always comes up and without understanding the whole
+it can never be sucessfully subsumed).
+<a href="https://www.youtube.com/watch?v=NM-zWTU7X-k">There is a differnce between knowing something and understanding it</a>
+You cannot outsource understanding; there is no such thing as passive learning.
+</p>
+
+<p>
+I'm not anti AI (I'm actually super pro AI if done in a more sustainable (with respect to the environment) and moral way, revolting against the consolidating of power / technofeudalism / bro-ligarchy and rent seeking behavior)
+I just think we're currently creating a large categorical mistake pushed by
+shitty, stupid (fundamentally uninteresting to me, i.e. money hungry) tech bros / managerial  class who are
+capitalizing an uncertain technological trajectory as though it were a nearly certain economic outcome.
+</p>
+
+<p>
+Even in the relatively narrow domain of software development, I'm standing on the proverbial shoulders of giants still.
+I could not make a game engine when I was first learning this stuff, I still can't read assembly code really.
+I'm dependent on the tool chains and knowledge that was created by people that came before me (ad infinitum as those people could say the same thing)
+</p>
+
+<p>
+Anything in this tradition that decentralizes knowledge and accelerates and deepens our own understanding is something to be celebrated.
+</p>
+
+<p>
+The mass market internet was initially a speculative bubble but obviously had real utility.
+AI as a next generation (high dimensional), context aware searching and generating tool obviously
+has real utility, the sepculative bubble associated with it just needs to pop and a more
+sustainable infrastructure (local models! ) needs to be adopted.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaddf1aa" class="outline-2">
+<h2 id="orgaddf1aa">Do not diminish the value of your own humanity</h2>
+<div class="outline-text-2" id="text-orgaddf1aa">
+<p>
+In the same way that LLMs are a high dimensional space searching tool, a non-trivial human
+product carries with it a high dimensional imprint of all the thousands of decisions and interactions
+that allowed it to take on the shape that it is.
+</p>
+
+<p>
+This is true also of skill development and gaining udnerstanding, they can neither be entirely reductionistically defined nor offloaded to an abstraction layer.
+These are mutually exclusive with automation.
+You get better by doing, there's simply no substitute for it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd9672ac" class="outline-2">
+<h2 id="orgd9672ac">Rammification of LLMs on indie game dev efforts</h2>
+<div class="outline-text-2" id="text-orgd9672ac">
+<p>
+The slop tsunami changes marketability and discoverability efforts.
+Decompilation and cloning abilities have been extremely accelerated,
+thus the shape of marketing might also change (you can now get scooped and beaten to market)
+(There are caveats to this as well:
+<a href="https://www.youtube.com/watch?v=_mgpfOox90w">Cakez the indie developer watching "Low Level" talk about decompilation and clean room implementations and compare a decompilation of his recent game against his own source code</a>
+automated decompilation is not perfect and this side by side example is very illustrative)
+</p>
+
+<p>
+Trademark (protecting market identity) and copyright law (protecting individual creation) exist for a reason though.
+I think recent examples of ideas being stolen (Needle in a haystack simulator, tidy up games) and beaten to market are too singular and not generalizable
+( <a href="https://www.youtube.com/watch?v=JfVOSeDV6iM">Good discussion on that here from Butterscotch games</a> )
+Moreover, I tend to side with The Gabe about piracy in general: <a href="https://www.youtube.com/watch?v=EQweFurRz4g">piracy is a service problem</a>
+</p>
+
+<p>
+<b>Can LLM clean room implementations be made or can games be vibed coded?</b>
+</p>
+
+<p>
+The fully vibe coded games I've honestly looked at just aren't good / or are awful.
+( e.g. <a href="https://www.reddit.com/r/accelerate/comments/1w9bpsj/ok_gpt6_astra_is_insane_at_making_games_i_remade/">https://www.reddit.com/r/accelerate/comments/1w9bpsj/ok_gpt6_astra_is_insane_at_making_games_i_remade/</a>
+this was made with the most recent GPT model Astra and the vibecoder
+spent more than $2000 in tokens to make it; it's doubly absurd since this is
+just a worse (albeit better looking and 3d) version of the original 1980s Atari videogame (Paperboy <a href="https://en.wikipedia.org/wiki/Paperboy_(video_game)">https://en.wikipedia.org/wiki/Paperboy_(video_game)</a>; <a href="https://playold.games/games/paperboy-3/play">https://playold.games/games/paperboy-3/play</a> )
+</p>
+
+<p>
+Everyone says the LLM adobe suite sucks
+</p>
+
+<p>
+As far as I can tell, any decent vibe coded game is an actual copy (a literal lossy / fuzzy/ lossy copy, not a copy from a given concept)
+e.g.: <a href="https://www.youtube.com/watch?v=UpqEC2-hH6g">https://www.youtube.com/watch?v=UpqEC2-hH6g</a>
+AI couldn't recreate the core mechanic remotely well until he fed the APK (Android Package Kit, i.e. compiled programming logic that runs the game and its assets) of the original game into the AI prompt
+</p>
+
+<p>
+I think if AI generated (like fully automated software factory / agentic coding based) games were good
+there would already have been a rapid proliferation of them (the time scales are so uttlery skewed, it's hard to have intuition, but if you spin up a swarm of agents, they can litterally work man
+in claude code ultra, we're literally talking a century of man hours in like ~11 days)
+</p>
+
+<p>
+I just don't buy the narratives being astroturfed right now ( they're also all about to IPO before this thing
+bursts and need a compelling story as explained above, thus you see the endless testimonies from veteran devs saying claude code
+one shotted the game industry and fucked their wife&#x2026;
+</p>
+
+<p>
+If AI is used in the devlopment of a game synergistically (centaur vs reverse centaur) then it's taken
+its rightful place in the stack of technology we're already standing on top of alluded to before.
+</p>
+
+<p>
+I actually think (as soon as the hype dies down a little / bubble deflates, pops,
+local models become more affordable ) that there's never been a better time to be making games.
+(e.g. it will ultimately enable more studios to maintain their own engines, or forks.
+ it will elevate the level of indie &amp; empower small teams like ours)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfb0fa31" class="outline-2">
+<h2 id="orgfb0fa31">So, should you be trying to make video games in this new world?</h2>
+<div class="outline-text-2" id="text-orgfb0fa31">
+<p>
+Steam is more accessible than it's every been, and building a game for it is riskier than it's ever been.
+Better tools, easier publishing =&gt; Less barrier to entry =&gt; naturally more games being made and released.
+This could fall within Jevon's paradox, "making a resource more efficient to use leads to an overall increase
+in total consumption rather than a decrease", or it could be more along the lines of
+the video game crash of 1983 (extreme market saturation with predominantly poor quality)
+</p>
+
+<blockquote>
+<p>
+"Look at video game history.
+</p>
+
+<p>
+From 1972 to 1977 Magnavox Odyssey, Home Pong and the Atari 2600 were making a ton of money. Then came the Pong clones. Hundreds of them. The market got saturated and there was a small shakeout.
+But companies did not learn.
+From 1979 to 1982 they flooded the Atari 2600 with cheap rushed low quality games. ET, bad Pac Man ports, shovelware. Everything to make a quick buck. Retailers could not sell it, consumers lost trust and in 1983 the market collapsed.
+Atari alone posted over 536 million dollars in losses that year. Adjusted that is over 1.6 billion today. Total industry revenue went from 3.2 billion to under 100 million. Companies went bankrupt. Truckloads of cartridges were literally buried in a New Mexico landfill.
+Then Nintendo rebuilt it.
+In 1985 they launched the NES in the US but they did not call it a video game console. They called it an Entertainment System and shipped it with a toy robot so retailers would actually stock it. And they introduced protection. The 10NES lockout chip and the Official Nintendo Seal of Quality. You could not just release a cheap game anymore. They controlled quality and quantity.
+Guess what is happening with AI right now. Cheap games.
+</p>
+
+<ul class="org-ul">
+<li>Random dude from reddit summarizing things well</li>
+</ul>
+</blockquote>
+
+<p>
+These kinds of cyclic trends are true in any field though (I think literally any field;
+academic math is going through this right now believe it or not, but it's more easily imagined
+in music, film, writing etc.) and this fact underlines that it really boils down to what you want to do with your time
+</p>
+
+<p>
+As already discussed, AI is an accelerant of existing issues
+Clones, still souless and wastes of everyone's time, are now brain dead easy to implement:
+<a href="https://www.youtube.com/watch?v=J4LeOYrKEhE">Random youtuber trying it out for himself</a>
+and the a gem of a comment on that same video:
+</p>
+<blockquote>
+<p>
+Games have been cloned since the beginning. I remember being a kid when my uncle came over with a box containing hundreds of Commodore 64 floppies and tasked my brother and me with sorting them. We spent days going through that box, loading them and checking what was on them and the sheer number of Tetris, Pac-Man, Jumpman, Donkey Kong, and Breakout clones was staggering. Sure, it’s faster and easier to make clones these days, but I’m not surprised in the least, nor do I particularly care. There’s always been imitation in gaming. At the end of the day, cream rises to the top.
+</p>
+</blockquote>
+
+<p>
+This will die down eventually ( at least with respect to steam as the market will crash otherwise. there has to be a means of correcting the asymmetric information
+(how to tell if something is slop ) and short-term profit incentives of the slop artists.)
+</p>
+
+<p>
+If you’re in the small minority making something valid, it will always be brutally hard to succeed, but it has nothing to do with “competition”.
+(See the endless slop being pitched here: <a href="https://www.reddit.com/r/DestroyMySteamPage/%20">Destroy my Steam Page subreddit</a> )
+</p>
+
+<p>
+All images are from SteamDb:
+<a href="../assets/steam_game_releases_by_review_count.png">steam releases by reivew count</a>
+<a href="../assets/games_released_by_year.png">steam games released by year</a>
+<a href="../assets/games_released_by_month.png">steam games released by month</a>
+</p>
+
+<p>
+So, at an individual level, assuming a passion for video games as a craft, these accelerated forces don't really matter at the end of the day;
+the odds haven't meaningfully changed (1 / big number -&gt; zero, number just got bigger)
+</p>
+
+<p>
+The median indie developer makes far, far less than a sustainable revenue from their efforts and it's going to stay that way.
+But you don't write a novel or make an album with the epxectation of remuneration of your efforts (more fundamentally and necessarily, the ability to make something good is
+inversely proportional to the profit seeking motive in creation)
+</p>
+
+<p>
+There is an <a href="https://www.youtube.com/watch?v=ZsWXAy61JWQ">indie middle class on steam right now</a>; it could be wiped out due to AI ( who knows ) but right now it's viable to be an indie developer assuming a minimum threshold
+of quality.
+We suck at big numbers as humans (non linear relationships, chaos, emergence etc), but <a href="../assets/steam_is_a_global_platform.png">steam is a global platform</a>
+Even if you earn bread crumbs, those crumbs can be massive.
+</p>
+
+<p>
+I hope from my arguments that wether it's worth it should be decoupled entirely from LLMs, the grifts will reach a new equilibrium and the technology will remain.
+The question is always, to get back to the deeper philosphiocal perspective of the beginning,
+what want to do with your life, there's no right or wrong answer.
+</p>
+
+<p>
+A lot of life is incidental, random even, and out of your control ( <a href="https://www.youtube.com/watch?v=e87vZZBvwSI">a great video on the topic from Barry's Economics</a> )
+I happened to end up doing a lot of graphics programming and game dev as a hobby over the years.
+Over time I've become better at it &amp; it's the hobby that has the largest venn diagram commerical and moral overlap
+(only way to make money from math or physics is to bomb brown people or do finanicial fuckery).
+</p>
+
+<p>
+I have a desire to create and to positively interact with the world.
+</p>
+
+<p>
+I only want to be defined by my passions and live authentically (understand not just know)
+</p>
+
+<p>
+Lots of ways to do it, but here I am.
+</p>
+
+<blockquote>
+<p>
+"I love searching around to find secrets, solve mysteries, and understand systems. Eventually I grudgingly accept that some systems are not worth understanding."
+</p>
+<ul class="org-ul">
+<li>David Wu (the late founder of pseudo interactive, a programming "hero" of mine)</li>
+</ul>
+</blockquote>
+
+<p>
+Maybe game dev is one such system (I often think so, but that's a different subject)
+I don't know, but I am certain generative AI can't be the reason why.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
